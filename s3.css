@@ -1,0 +1,57 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+.sidebar {
+    width: 50%;
+    height: 85vh;
+    min-height: 200px;
+    overflow: auto;
+    position: sticky;
+    top: 5%;
+  }
+  
+  .main {
+    width: 43%;
+    height: 200vh;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main,
+  .sidebar {
+    border: 5px solid #222;
+    background-color: white;
+    border-radius: 10px;
+    color: #222;
+    padding: 10px;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  body {
+    padding: 3%;
+    background-color: #ccc;
+    font-size: 20px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  header {
+    text-align: center;
+  }
+  
+  code, pre {
+    background-color: #ccc;
+    padding: 0 3px;
+    border-radius: 5px;
+  }
+  
+  .bottom {
+    justify-self: bottom;
+  }
+
+  

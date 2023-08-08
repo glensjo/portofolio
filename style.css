@@ -1,0 +1,206 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Quicksand',sans-serif;
+  margin: 0;
+  background-color: #333;
+  padding: 3%;
+  font-size: 18px;
+  box-sizing: border-box;
+  color: white;
+}
+
+h2, h3, h5 {
+   text-align: center;
+}
+ 
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-button {  
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.side {
+  flex: 50%;
+  padding: 20px;
+  height: 90vh;
+  min-height: 200px;
+  position: sticky;
+  top: 5%;
+}
+ 
+.main {
+  flex: 40%;
+  padding: 20px;
+  min-height: 1000px;
+}
+
+.main,
+.side {
+  border-radius: 10px;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* .box {
+  background-color: rgb(73, 73, 73);
+  position: relative;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.box:hover {
+  zoom: 110%;
+  cursor: text;
+}
+  */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+  
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.button-container {
+  width: 200px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #888888;
+  zoom: 112%;
+}
+ 
+/* slide */
+.mySlides {display: none}
+img {vertical-align: middle;}
+ 
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 5%;
+}
+ 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+ 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+ 
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+ 
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+ 
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+ 
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+ 
+.active, .dot:hover {
+  background-color: #717171;
+}
+ 
+/* animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+ 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {font-size: 11px}
+}
+ 
+/* Responsive layout - when the screen is less than 700px wide */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+  .side {
+    position: relative;
+  }
+}
